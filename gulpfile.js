@@ -229,7 +229,7 @@ export const server = () => {
     ui: false,
     notify: false,
     host: "localhost",
-    tunnel: true,
+    // tunnel: true,
     server: {
       baseDir: path.dist.base,
     },
@@ -243,7 +243,7 @@ export const server = () => {
   gulp.watch(path.src.assets, copy);
 };
 
-const clear = () =>
+export const clear = () =>
   del(path.dist.base, {
     force: true,
   });
