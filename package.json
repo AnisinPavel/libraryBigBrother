@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/AnisinPavel/libraryBigBrother#readme",
   "dependencies": {
-    "localtunnel": "^2.0.2"
+    "localtunnel": "^2.0.2",
+    "navigo": "^8.11.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",

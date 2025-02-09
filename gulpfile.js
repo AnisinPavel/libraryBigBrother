@@ -13,7 +13,7 @@ import htmlMin from "gulp-htmlmin";
 
 // css
 
-import sass from "sass";
+import * as sass from "sass";
 import gulpSass from "gulp-sass";
 const scssToCss = gulpSass(sass);
 

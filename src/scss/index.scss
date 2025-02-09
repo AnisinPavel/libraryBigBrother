@@ -1,1 +1,11 @@
-@use "var";
+@import "normalize";
+@include normalize();
+@import "var";
+@import "font";
+@import "default";
+
+@import "block/header";
+@import "block/library";
+@import "block/cart";
+
+@import "block/footer";
