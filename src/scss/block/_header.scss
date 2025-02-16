@@ -28,4 +28,11 @@
   &__btn_search {
     background-image: url("../img/search.svg");
   }
+  &__btn_back {
+    background-image: url("../img/back.svg");
+    background-position: center left;
+  }
+  &__btn_delete {
+    background-image: url("../img/delete.svg");
+  }
 }
