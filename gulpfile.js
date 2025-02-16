@@ -91,7 +91,7 @@ export const scss = () =>
         })
       )
     )
-    .pipe(gulpif(!dev, gcmq()))
+    .pipe(gcmq())
     .pipe(gulpif(!dev, gulp.dest(path.dist.css)))
     .pipe(
       gulpif(

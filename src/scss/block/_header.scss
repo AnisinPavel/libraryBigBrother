@@ -1,6 +1,14 @@
 .header {
   padding: 8px 0;
 
+  @include tablet {
+    padding: 20px 0 15px;
+  }
+
+  @include desktop {
+    padding: 30px 0 25px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -9,10 +17,27 @@
 
   &__logo {
     height: 40px;
+    margin-right: auto;
+    @include laptop {
+      height: 66px;
+    }
   }
 
   &__btn-add {
     display: none;
+    @include laptop {
+      display: block;
+      width: 320px;
+      height: 50px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      color: $light;
+      border-radius: 8px;
+      background-color: $primary;
+      border: 0;
+      margin-right: 102px;
+    }
   }
 
   &__btn {
@@ -22,17 +47,16 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border: 0;
-    background-position: center right;
-  }
-
-  &__btn_search {
-    background-image: url("../img/search.svg");
-  }
-  &__btn_back {
-    background-image: url("../img/back.svg");
-    background-position: center left;
-  }
-  &__btn_delete {
-    background-image: url("../img/delete.svg");
+    background-position: right;
+    &_search {
+      background-image: url("../img/search.svg");
+    }
+    &_back {
+      background-image: url("../img/back.svg");
+      background-position: left;
+    }
+    &_delete {
+      background-image: url("../img/delete.svg");
+    }
   }
 }

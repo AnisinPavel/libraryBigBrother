@@ -34,7 +34,7 @@
 
         <div class="library__fields fields">
           <div class="fields__block">
-            <button class="fields__btn fields__btn-sort">
+            <button class="fields__btn fields__btn_sort">
               <svg
                 width="18"
                 height="12"
@@ -44,13 +44,13 @@
               >
                 <path
                   d="M0 12H6V10H0V12ZM0 0V2H18V0H0ZM0 7H12V5H0V7Z"
-                  fill="white"
+                  fill="currentColor"
                 />
               </svg>
               <span class="fields__text">По рейтингу</span>
             </button>
 
-            <ul class="fields__list fields__list-sort">
+            <ul class="fields__list fields__list_sort">
               <li class="fields__item">
                 <button class="fields__button">От большего</button>
               </li>
@@ -61,7 +61,7 @@
           </div>
 
           <div class="fields__block">
-            <button class="fields__btn fields__btn-filter">
+            <button class="fields__btn fields__btn_filter">
               <svg
                 width="16"
                 height="16"
@@ -71,13 +71,13 @@
               >
                 <path
                   d="M0.249995 1.61C2.26999 4.2 5.99999 9 5.99999 9V15C5.99999 15.55 6.44999 16 6.99999 16H9C9.55 16 10 15.55 10 15V9C10 9 13.72 4.2 15.74 1.61C16.25 0.95 15.78 0 14.95 0H1.03999C0.209995 0 -0.260005 0.95 0.249995 1.61Z"
-                  fill="white"
+                  fill="currentColor"
                 />
               </svg>
               <span class="fields__text">Фильтр</span>
             </button>
 
-            <ul class="fields__list fields__list-filter">
+            <ul class="fields__list fields__list_filter">
               <li class="fields__item">
                 <button class="fields__button">хочу прочитать</button>
               </li>
@@ -182,7 +182,7 @@
         </ul>
       </div>
 
-      <footer class="footer">
+      <footer class="footer library__footer">
         <button
           class="footer__btn library__add-btn"
           aria-label="Добавить книгу"
@@ -238,7 +238,7 @@
         <div class="book__wrapper">
           <img class="book__image" src="img/1984.webp" alt="обложка 1984" />
 
-          <button class="book__label">хочу прочитать</button>
+          <button class="book__label book__label_img">хочу прочитать</button>
         </div>
       </div>
 
@@ -277,7 +277,7 @@
         </p>
       </div>
 
-      <footer class="footer">
+      <footer class="footer book__footer">
         <button class="footer__btn book__label-btn">хочу прочитать</button>
       </footer>
     </section>
@@ -447,5 +447,27 @@
         </div>
       </form>
     </section>
+    <div class="search">
+      <div class="container">
+        <form class="search__form">
+          <label><input class="search__input" type="search" /></label>
+
+          <button class="search__button">
+            <svg
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
