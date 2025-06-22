@@ -1,0 +1,22 @@
+{
+  "name": "librarybigbrother.loc",
+  "version": "1.0.0",
+  "description": "Учебный проект METHED",
+  "main": "index.js",
+  "scripts": {
+    "build":"gulp build",
+    "start":"gulp",
+    "clear":"gulp clear"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnisinPavel/libraryBigBrother.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnisinPavel/libraryBigBrother/issues"
+  },
+  "homepage": "https://github.com/AnisinPavel/libraryBigBrother#readme"
+}
