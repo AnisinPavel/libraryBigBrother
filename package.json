@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Учебный проект METHED",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build":"gulp build",
-    "start":"gulp",
-    "clear":"gulp clear"
+    "build": "gulp build",
+    "start": "gulp",
+    "clear": "gulp clear"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/AnisinPavel/libraryBigBrother/issues"
   },
-  "homepage": "https://github.com/AnisinPavel/libraryBigBrother#readme"
+  "homepage": "https://github.com/AnisinPavel/libraryBigBrother#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.0",
+    "gulp": "^5.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0"
+  }
 }
